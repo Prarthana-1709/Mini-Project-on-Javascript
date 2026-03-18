@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: aqua;
+}
+.calculator{
+    background-color:black;
+    padding: 20px;
+    border-radius: 20px;
+}
+.display{
+    background:black;
+    color:lightgreen;
+    text-align: right;
+    padding: 20px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,70px);
+    grid-template-rows: repeat(5,70px);
+    gap:10px;
+}
+.button{
+    font-size: 2rem;
+    padding: 10px;
+    background: darkgray;
+    color: white;
+}
+button:hover{
+    background: darkgray;
+}
+.operator{
+    background: orange;
+}
+.equal{
+    background: lightseagreen;
+    grid:span 2;
+}
+.clear{
+    background: crimson;
+    grid:span 2;
+}
